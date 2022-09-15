@@ -1,0 +1,10 @@
+@import '../../../styles.scss';
+.footer {
+  height: 12vh;
+  background-color: $mainColor;
+  text-align: center;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

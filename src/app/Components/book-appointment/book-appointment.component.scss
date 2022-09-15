@@ -1,0 +1,64 @@
+@import '../../../styles.scss';
+
+.appointment {
+  background: url('../../../assets/Images/contactUS.jpg') no-repeat;
+  background-size: 100vw 88vh;
+  .layOut {
+    background-color: rgba(0, 0, 0, 0.75);
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:flex-start;
+    padding: 10px 30px;
+    input {
+      padding: 10px;
+      margin: 12px;
+      width: 33.7%;
+      border: none;
+      outline: none;
+    }
+    .subject {
+      width: 70%;
+    }
+    textarea {
+      border: none;
+      outline: none;
+      padding: 10px;
+      margin: 12px;
+      width: 70%;
+      resize: none;
+    }
+    input,textarea:focus {
+      outline: 5px solid $mainColor;
+    }
+    .btn {
+      width: 20%;
+      padding: 10px 16px;
+      background-color: $mainColor;
+      font-weight: bold;
+      font-size: 20px;
+      color: white;
+      display: block;
+      margin: 12px 8px;
+      transition: .1s ease-in-out;
+      border-radius: 4px;
+    }
+    .btn:hover {
+      background-color: transparent;
+      outline: 4px solid $mainColor;
+      border-radius: 4px;
+    }
+
+    @media (max-width:776px) {
+      input,textarea,.subject {
+        width: 90%;
+      }
+      .btn {
+        width: 50%;
+      }
+    }
+  }
+}

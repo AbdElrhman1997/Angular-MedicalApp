@@ -1,0 +1,13 @@
+<section class="appointment">
+  <div class="layOut">
+    <p class="text-white mt-4 mx-3" data-aos="fade-right">MAKE AN APPOINTMENT</p>
+    <p class="font-bold text-4xl my-4 mx-3 text-white" data-aos="fade-right">Get Free Consultation</p>
+    <form #form action="" data-aos="fade-right">
+      <input type="text" placeholder="Name" />
+      <input type="email" placeholder="Email"/>
+      <input type="text" class="subject" placeholder="Subject"/>
+      <textarea cols="10" rows="10" placeholder="Message"></textarea>
+      <button type="submit" class="btn" [disabled]="form">Book Now</button>
+    </form>
+  </div>
+</section>

@@ -1,0 +1,21 @@
+.doctors {
+  .container {
+    .box {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      margin: 20px auto;
+      img {
+        width: 300px;
+        height: 300px;
+      }
+      @media (min-width) and (max-width) {
+        img {
+          width: 70%;
+        }
+      }
+    }
+  }
+}

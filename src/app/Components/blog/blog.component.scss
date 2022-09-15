@@ -1,0 +1,23 @@
+.blog {
+  background-color: #efefef;
+  .container {
+    .box {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      margin: 40px 20px;
+      img {
+        width: 90%;
+      }
+    }
+    @media (min-width:567px) and (max-width:767px) {
+      .box {
+        margin: 40px auto;
+        width: 70%;
+      }
+    }
+  }
+}

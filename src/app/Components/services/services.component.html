@@ -1,0 +1,10 @@
+<section class="services py-10">
+  <div class="font-bold text-5xl text-center w-full mb-10">Services</div>
+  <div class="container mx-auto lg:grid md:grid grid-cols-12">
+    <div *ngFor="let box of Boxs" class="mx-auto lg:col-span-4 md:col-span-6 box"  data-aos="fade-right">
+      <img [src]="box.img" alt="">
+      <p class="my-4 font-bold text-2xl">{{box.title}}</p>
+      <p class="w-4/5 font-medium">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy</p>
+    </div>
+  </div>
+</section>

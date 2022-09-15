@@ -1,0 +1,10 @@
+<section class="doctors">
+  <p class="font-bold text-5xl text-center mt-12 mb-10">Our Expert Team</p>
+  <div class="container mx-auto lg:grid md:grid grid-cols-12 gap-5 px-4">
+    <div class="box lg:col-span-3 md:col-span-6" *ngFor="let box of Boxs" data-aos="fade-right">
+      <img [src]="box.img" alt="" class="">
+      <p class="font-semibold text-2xl mt-6">{{box.name}}</p>
+      <p class="text-lg">Cardiologist</p>
+    </div>
+  </div>
+</section>
