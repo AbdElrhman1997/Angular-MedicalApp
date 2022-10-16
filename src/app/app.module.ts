@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { CarouselModule } from 'ngx-owl-carousel-o';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -27,13 +28,10 @@ import { MainLayOutComponent } from './Components/main-lay-out/main-lay-out.comp
     FooterComponent,
     HomeComponent,
     BookAppointmentComponent,
-    MainLayOutComponent
+    MainLayOutComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-    ],
+  imports: [BrowserModule, AppRoutingModule, CarouselModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
